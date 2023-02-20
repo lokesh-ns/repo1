@@ -5,8 +5,7 @@ pipeline{
 
         stage ('stage 1'){
             steps{
-                echo 'pwd'
-                echo "hey there" >> myfile.txt
+                echo "hey there"
                 // sh 'ls'
             }
         }
