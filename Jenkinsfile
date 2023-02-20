@@ -5,11 +5,9 @@ pipeline{
 
         stage ('stage 1'){
             steps{
-                withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']){
-                    sh 'pwd'
-                    sh 'echo "hey there" >> myfile.txt'
-                    sh 'ls'
-                }
+                echo 'pwd'
+                echo "hey there" >> myfile.txt
+                // sh 'ls'
             }
         }
 
