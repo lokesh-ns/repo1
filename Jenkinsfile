@@ -5,7 +5,7 @@ pipeline{
 
         stage ('stage 1'){
             steps{
-                sh 'echo "hey there" > file2.txt'
+                sh 'echo "hey there" >> file2.txt'
             }
         }
 
