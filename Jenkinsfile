@@ -15,7 +15,7 @@ pipeline{
             }
         }
 
-        steps('stage 3'){
+        stage('stage 3'){
             steps{
                 sh "hey this is stage 3"
             }
