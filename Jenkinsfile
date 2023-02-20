@@ -6,7 +6,6 @@ pipeline{
         stage ('stage 1'){
             steps{
                 bat 'echo "hey there" >> myfile.txt'
-                bat 'ls'
             }
         }
 
