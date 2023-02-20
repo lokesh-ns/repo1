@@ -5,12 +5,13 @@ pipeline{
 
         stage ('stage 1'){
             steps{
-                echo "hey this is stage 1"
+                sh 'echo "hey there" > file2.txt'
             }
         }
 
         stage('stage 2'){
             steps{
+                sh 'cat file2.txt'
                 echo "hey this is stage 2"
             }
         }
