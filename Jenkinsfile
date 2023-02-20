@@ -14,13 +14,13 @@ pipeline{
         stage('stage 2'){
             steps{
                 sh 'cat myfile.txt'
-                echo "hey this is stage 2"
+                sh 'echo "hey this is stage 2"'
             }
         }
 
         stage('stage 3'){
             steps{
-                echo "hey this is stage 3"
+                sh 'echo "hey this is stage 3"'
             }
         }
     }
