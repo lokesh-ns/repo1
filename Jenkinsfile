@@ -5,22 +5,22 @@ pipeline{
 
         stage ('stage 1'){
             steps{
-                sh 'pwd'
-                sh 'echo "hey there" >> myfile.txt'
-                sh 'ls'
+                bat 'pwd'
+                bat 'echo "hey there" >> myfile.txt'
+                bat 'ls'
             }
         }
 
         stage('stage 2'){
             steps{
-                sh 'cat myfile.txt'
-                sh 'echo "hey this is stage 2"'
+                bat 'cat myfile.txt'
+                bat 'echo "hey this is stage 2"'
             }
         }
 
         stage('stage 3'){
             steps{
-                sh 'echo "hey this is stage 3"'
+                bat 'echo "hey this is stage 3"'
             }
         }
     }
