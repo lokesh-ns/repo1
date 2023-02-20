@@ -5,22 +5,22 @@ pipeline{
 
         stage ('stage 1'){
             steps{
-                bash 'pwd'
-                bash 'echo "hey there" >> myfile.txt'
-                bash 'ls'
+                sudo sh 'pwd'
+                sudo sh 'echo "hey there" >> myfile.txt'
+                sudo sh 'ls'
             }
         }
 
         stage('stage 2'){
             steps{
-                bash 'cat myfile.txt'
-                bash 'echo "hey this is stage 2"'
+                sudo sh 'cat myfile.txt'
+                sudo sh 'echo "hey this is stage 2"'
             }
         }
 
         stage('stage 3'){
             steps{
-                bash 'echo "hey this is stage 3"'
+                sudo sh 'echo "hey this is stage 3"'
             }
         }
     }
