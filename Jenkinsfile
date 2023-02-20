@@ -12,6 +12,7 @@ pipeline{
         stage('stage 2'){
             steps{
                 bat 'echo "hey this is stage 2"'
+                bat 'cat myfile.txt'
             }
         }
 
